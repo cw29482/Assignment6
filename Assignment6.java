@@ -1,13 +1,14 @@
 public class Day {
 
 	private String day;
+	//Array of attributes in curly brackets
 	private String [] daysNameAbreviated = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 	
-
+	//constructor that initializes the specified day
 	public Day(){
 		this.day = "Mon ";
 	}
-
+	//Initialize a day of the week (day in string type)
 	public Day(String day) {
 		this.day = day;
 	}
@@ -19,8 +20,8 @@ public class Day {
 	public void setDay(String day) {
 		this.day = day;
 	}
-
-	public String nextDay(){
+	
+	public String nextDay(){ //returns the day after the giving day
 		String message = "";
 		int indexOfDay = getIndexOfDay(this.day);
 		int afterToday = indexOfDay + 1;
